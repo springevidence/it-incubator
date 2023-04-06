@@ -22,3 +22,7 @@ const myArray3 = [
   
 const data = myArray3[2][1];
 
+//Manipulate Arrays With push Method
+const myArray4 = [["John", 23], ["cat", 2]];
+myArray4.push(["dog", 3]);
+
