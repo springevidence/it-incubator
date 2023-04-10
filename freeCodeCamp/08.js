@@ -34,3 +34,7 @@ const removedFromMyArray = myArray5.pop();
 const myArray6 = [["John", 23], ["dog", 3]];
 const removedFromMyArray1 = myArray6.shift();
 
+//Manipulate Arrays With unshift Method
+const myArray7 = [["John", 23], ["dog", 3]];
+myArray7.shift(["John", 23]);
+myArray7.unshift(["Paul", 35]);
