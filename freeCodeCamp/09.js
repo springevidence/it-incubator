@@ -15,3 +15,22 @@ function timesFive(num) {
     return num * 5;
   }
 timesFive(3);
+
+//Global Scope and Functions
+let myGlobal = 10;
+
+function fun1() {
+  let oopsGlobal = 5;
+}
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
