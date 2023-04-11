@@ -68,3 +68,12 @@ function processArg(num) {
     return (num + 3) / 5;
 }
 processed = processArg(7);
+
+//Stand in Line 
+function nextInLine(arr, item) {
+    arr.push(item);
+    item = arr.shift();
+    return item;
+}  
+let testArr = [1, 2, 3, 4, 5];
+console.log(nextInLine(testArr, 6));
