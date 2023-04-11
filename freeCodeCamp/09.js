@@ -20,17 +20,24 @@ timesFive(3);
 let myGlobal = 10;
 
 function fun1() {
-  let oopsGlobal = 5;
+    let oopsGlobal = 5;
 }
 
 function fun2() {
-  let output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
+    let output = "";
+    if (typeof myGlobal != "undefined") {
+        output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined") {
+        // output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
 }
 
+//Local Scope and Functions
+function myLocalScope() {
+    const myVar = 5;
+    console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+console.log('outside myLocalScope', myVar);
