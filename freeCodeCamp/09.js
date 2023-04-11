@@ -40,4 +40,13 @@ function myLocalScope() {
     console.log('inside myLocalScope', myVar);
 }
 myLocalScope();
-console.log('outside myLocalScope', myVar);
+// console.log('outside myLocalScope', myVar);
+
+
+//Global vs. Local Scope in Functions 
+const outerWear = "T-Shirt";
+function myOutfit() {
+    const outerWear = "sweater";
+    return outerWear;
+}
+myOutfit();
