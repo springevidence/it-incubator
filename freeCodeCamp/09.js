@@ -77,3 +77,9 @@ function nextInLine(arr, item) {
 }  
 let testArr = [1, 2, 3, 4, 5];
 console.log(nextInLine(testArr, 6));
+
+//Understanding Boolean Values
+function welcomeToBooleans() {  
+    return true; 
+}
+
