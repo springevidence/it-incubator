@@ -101,3 +101,12 @@ function testEqual(val) {
     return "Not Equal";
   }
 testEqual(10);
+
+//Comparison with the Strict Equality Operator
+function testStrict(val) {
+    if (val === 7) {
+      return "Equal";
+    }
+    return "Not Equal";
+}
+console.log(testStrict(10));
