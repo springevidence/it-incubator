@@ -12,3 +12,10 @@ for (let i = 1; i <= 5; i++) {
     myArray2.push(i);
 }
 
+// Iterate Odd Numbers With a For Loop
+const myArray3 = [];
+for (let i = 1; i <= 9; i += 2) {
+  myArray3.push(i);
+}
+
+
