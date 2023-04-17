@@ -81,3 +81,26 @@ function checkObj(obj, checkProp) {
       return "Not Found";
     }
 }
+
+// Manipulating Complex Objects
+const myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    },
+    {
+      "artist": "Daft Punk",
+      "title": "Random Access Memories",
+      "release_year": 2013,
+      "formats": [
+        "CD", "LP", "Vinyl"
+      ]
+    }
+];
