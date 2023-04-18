@@ -43,3 +43,11 @@ function multiplyAll(arr) {
     return product;
 }
 multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+// Iterate with JavaScript Do...While Loops
+const myArray5 = [];
+let j = 10;
+do {
+  myArray5.push(j);
+  j++;
+} while (j < 5);
