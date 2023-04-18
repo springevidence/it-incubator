@@ -19,3 +19,10 @@ for (let i = 1; i <= 9; i += 2) {
 }
 
 
+// Count Backwards With a For Loop
+const myArray4 = [];
+for (let i = 9; i >= 1; i -= 2) {
+    myArray4.push(i);
+}
+
+// Iterate Through an Array with a For Loop
