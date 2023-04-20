@@ -20,10 +20,17 @@ function convertToInteger(str) {
 }
 convertToInteger("56");
 
-//Use the parseInt Function with a Radix
+// Use the parseInt Function with a Radix
 function convertToInteger(str) {
   return parseInt(str, 2);
 }
 convertToInteger("10011");
 
-//
+// Use the Conditional (Ternary) Operator
+function checkEqual(a, b) {
+  return a === b? "Equal" : "Not Equal";
+}
+checkEqual(1, 2);
+
+// 
+
