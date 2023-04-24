@@ -19,6 +19,5 @@ function rangeOfNumbers(startNum, endNum) {
     constArray.push(endNum);
     return constArray;
   }
-  
 }
 console.log(rangeOfNumbers(2, 6));
