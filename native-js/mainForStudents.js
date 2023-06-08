@@ -148,25 +148,26 @@ let superUserCorrect3 = {...superUser, friends: [...superUser.friends, newFriend
 
 //12. Найдите студента с самым высоким баллом не используя методы массивов и
 // Math.max()*
-let bestStudent;
+let bestStudent = students[0];
+for(let i=1; i < students.length; i++) {
+    if (students[i].scores > bestStudent.scores) {
+        bestStudent = students[i]
+    }
+}
 // console.log(bestStudent)
 
-
-
-
 //13. Найдите сумму баллов всех студентов (reduce)*
-let scoresSum;
+let scoresSum = students.reduce((acc, curr) => acc + curr.scores, 0)
 // console.log(scoresSum)
-
-
 
 // 14. Д.З.:
 // Напишите функцию addFriends, которая принимает параметром массив students
-// и добавляет в каждому студенту свойство "friends",
+// и добавляет каждому студенту свойство "friends",
 // значением которого является массив имён всех остальных студентов из массива students,
 // за исключением собственного имени студента. Т.е. в друзьях у Боба Боба быть не должно.
 const addFriends = (students) => {
-   //..............................
+    const friendsArray = [].concat(students.map(el => el.name));
+    return students.map(el => ({...el, friends: friendsArray.filter(f => f !== el.name)}))
 }
 // console.log(addFriends(students));
 
@@ -177,9 +178,20 @@ const addFriends = (students) => {
 // getBestStudents(students, 3) => [{...}, {...}, {...}]
 // getBestStudents(students, 10) => [{}, {}, ...., {}, null, null, null, null ]
 
-
-
-
+const getBestStudents = (arr, num) => {
+    let bestStudentsArr = []
+    let sortedByScores = [...arr].sort((a,b) => b.scores - a.scores)
+    if (num === undefined) {
+        bestStudentsArr.push(sortedByScores[0])
+    }
+    for (let i = 0; i < num; i++) {
+        bestStudentsArr.push(sortedByScores[i])
+    }
+    return bestStudentsArr
+}
+console.log(getBestStudents(students, 3))
+console.log(getBestStudents(students, 10))
+console.log(getBestStudents(students))
 
 
 
